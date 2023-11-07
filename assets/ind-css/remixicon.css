@@ -1,0 +1,66 @@
+@font-face {
+    font-family: remixicon;
+    src: url(../fonts/remixicon126a.eot?t=1680703320261);
+    src: url(../fonts/remixicon126a.eot?t=1680703320261#iefix) format('embedded-opentype'), url(../fonts/remixicon126a.woff2?t=1680703320261) format("woff2"), url(../fonts/remixicon126a.woff?t=1680703320261) format("woff"), url(../fonts/remixicon126a.ttf?t=1680703320261) format('truetype'), url(../fonts/remixicon126a.svg?t=1680703320261#remixicon) format('svg');
+    font-display: swap
+}
+
+[class*=" ri-"],
+[class^=ri-] {
+    font-family: remixicon !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.ri-arrow-right-line:before {
+    content: "\ea6c"
+}
+
+.ri-arrow-up-line:before {
+    content: "\ea76"
+}
+
+.ri-check-line:before {
+    content: "\eb7b"
+}
+
+.ri-close-line:before {
+    content: "\eb99"
+}
+
+.ri-copyright-line:before {
+    content: "\ebe2"
+}
+
+.ri-facebook-fill:before {
+    content: "\ecbc"
+}
+
+.ri-instagram-fill:before {
+    content: "\ee65"
+}
+  
+.ri-mail-fill:before {
+    content: "\eef3"
+}
+
+.ri-map-pin-2-fill:before {
+    content: "\ef09"
+}
+
+.ri-phone-fill:before {
+    content: "\efe9"
+}
+
+.ri-star-fill:before {
+    content: "\f186"
+}
+
+.ri-checkbox-blank-circle-fill:before {
+    content: "\eb7c";
+}
+
+.ri-map-pin-fill:before {
+    content: "\ef13";
+}
