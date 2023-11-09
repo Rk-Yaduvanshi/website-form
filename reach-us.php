@@ -15,7 +15,15 @@
     <link rel="stylesheet" href="assets/css/correction.css">
     <title>Contact Us</title>
 
-   
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY919G6GY2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QY919G6GY2');
+</script>
 
     <style>
         .error_field {
