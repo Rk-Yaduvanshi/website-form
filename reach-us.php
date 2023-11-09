@@ -15,15 +15,187 @@
     <link rel="stylesheet" href="assets/css/correction.css">
     <title>Contact Us</title>
 
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY919G6GY2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY919G6GY2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-QY919G6GY2');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QY919G6GY2');
+    </script> -->
+
+
+
+
+    <script>
+        function loadGoogleAnalytics() {
+            var script = document.createElement('script');
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-QY919G6GY2';
+            script.async = true;
+            document.head.appendChild(script);
+
+            script.onload = function () {
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'G-QY919G6GY2');
+            };
+        }
+
+        // Call the function to load Google Analytics after a 5-second delay.
+        setTimeout(loadGoogleAnalytics, 5000); // 5000 milliseconds = 5 seconds
+    </script>
+
+
+    <script>
+        function loadScripts() {
+            // Function to load Google Analytics
+            function loadGoogleAnalytics() {
+                var gaScript = document.createElement('script');
+                gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-dummy-id';
+                gaScript.async = true;
+
+                gaScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+
+                    function gtag() {
+                        dataLayer.push(arguments);
+                    }
+                    gtag('js', new Date());
+                    gtag('config', 'G-dummy-id');
+                };
+
+                document.head.appendChild(gaScript);
+            }
+
+            // Function to load jQuery
+            function loadJQuery() {
+                var jqueryScript = document.createElement('script');
+                jqueryScript.src = 'assets/js/jquery-3.6.3.min.js';
+                jqueryScript.async = true;
+
+                document.head.appendChild(jqueryScript);
+            }
+
+            // Use setTimeout to call both functions after a 5-second delay
+            setTimeout(loadGoogleAnalytics, 5000);
+            setTimeout(loadJQuery, 5000);
+        }
+
+        // Call the function to load both scripts
+        loadScripts();
+    </script>
+
+
+
+    <!-- seperately loading gtag and jquery -->
+
+    <script>
+        // Function to load Google Analytics
+        function loadGoogleAnalytics() {
+            var gaScript = document.createElement('script');
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-dummy-id';
+            gaScript.async = true;
+
+            gaScript.onload = function () {
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'G-dummy-id');
+            };
+
+            document.head.appendChild(gaScript);
+        }
+
+        // Function to load jQuery
+        function loadJQuery() {
+            var jqueryScript = document.createElement('script');
+            jqueryScript.src = 'assets/js/jquery-3.6.3.min.js';
+            jqueryScript.async = true;
+
+            document.head.appendChild(jqueryScript);
+        }
+
+        // Use setTimeout to load Google Analytics after a 5-second delay
+        setTimeout(loadGoogleAnalytics, 5000);
+
+        // Use another setTimeout to load jQuery after a 10-second delay
+        setTimeout(loadJQuery, 10000);
+    </script>
+
+
+
+
+
+
+
+    <!-- <script>
+        // Function to load Google Analytics after a 5-second delay
+        function loadGoogleAnalytics() {
+            var script = document.createElement('script');
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-dummy-id';
+            script.async = true;
+
+            // Define a callback function for when the script loads
+            script.onload = function () {
+                // Initialize Google Analytics after the script is loaded
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'G-dummy-id');
+            };
+
+            // Append the script element to the document's head
+            document.head.appendChild(script);
+        }
+
+        // Use setTimeout to call the function after a 5-second delay
+        setTimeout(loadGoogleAnalytics, 5000); // 5000 milliseconds = 5 seconds
+    </script> -->
+
+
+
+
+    <!-- 
+<script>
+  function loadGoogleAnalytics() {
+    var customScript = document.createElement('script');
+    customScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-dummy-id';
+    customScript.async = true;
+    document.head.appendChild(customScript);
+
+    customScript.onload = function () {
+      window.customDataLayer = window.customDataLayer || [];
+
+      function customGtag() {
+        customDataLayer.push(arguments);
+      }
+      customGtag('js', new Date());
+      customGtag('config', 'G-dummy-id');
+    };
+  }
+
+  // Call the function to load Google Analytics after a 5-second delay.
+  setTimeout(loadGoogleAnalytics, 5000); // 5000 milliseconds = 5 seconds
+</script> -->
+
+
+
+
+
 
     <style>
         .error_field {
@@ -141,4 +313,3 @@
 </body>
 
 </html>
-
